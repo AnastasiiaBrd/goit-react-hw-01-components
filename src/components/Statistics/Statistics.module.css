@@ -1,0 +1,36 @@
+.statistics {
+  height: 200px;
+  width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.statistics:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.stat-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin-top: 50px;
+}
+.item {
+  width: 100px;
+  height: 75px;
+}
+.title {
+  padding-top: 50px;
+  color: #8f8f8f;
+}
+.label {
+  color: white;
+  justify-content: center;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.percentage {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}

@@ -1,11 +1,25 @@
 import "./App.css";
+import Profile from "./components/Profile/Profile.jsx";
+import user from "./base/user.json";
 
-function App() {
+import Statistics from "./components/Statistics/Statistics.jsx";
+import data from "./base/data.json";
+
+import FriendList from "./components/FriendList/FriendList";
+import friends from "./base/friends.json";
+
+export default function App() {
   return (
     <div className="App">
-      <h1>hi</h1>
+      <div className="Profile">
+        <Profile data={user} />
+      </div>
+      <div className="Statistics">
+        <Statistics title="Upload stats" stats={data} />
+      </div>
+      <div className="FriendList">
+        <FriendList friends={friends} />
+      </div>
     </div>
   );
 }
-
-export default App;

@@ -1,0 +1,42 @@
+.profile {
+  height: 500px;
+  width: 400px;
+  margin: 0 auto;
+  padding-top: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background: burlywood;
+}
+.profile:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.stats {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.label {
+  display: flex;
+}
+.avatar {
+  border-radius: 50%;
+}
+.name {
+  color: #000000;
+  font-size: 30px;
+  font-weight: bold;
+}
+.tag,
+.location,
+.label {
+  color: #9c9797;
+  font-size: 20px;
+}
+.quantity {
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+}
