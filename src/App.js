@@ -8,6 +8,9 @@ import data from "./base/data.json";
 import FriendList from "./components/FriendList/FriendList";
 import friends from "./base/friends.json";
 
+import TransactionHistory from "./components/TransactionHistory/TransactionHistory.jsx";
+import transactions from "./base/transactions.json";
+
 export default function App() {
   return (
     <div className="App">
@@ -19,6 +22,9 @@ export default function App() {
       </div>
       <div className="FriendList">
         <FriendList friends={friends} />
+      </div>
+      <div className="TransactionHistory">
+        <TransactionHistory items={transactions} />
       </div>
     </div>
   );

@@ -4,17 +4,19 @@ import styles from "./Statistics.module.css";
 
 const Statistics = ({ title = "Upload stats", stats }) => {
   return (
-    <section className="statistics">
-      <h2 className="title">{title.length > 0 ? title : title.length < 0}</h2>
-      <ul className="stat-list">
+    <section className={styles.statistics}>
+      <h2 className={styles.title}>
+        {title.length > 0 ? title : title.length < 0}
+      </h2>
+      <ul className={styles.stat_list}>
         {stats.map((stat) => (
           <li
             key={stat.id}
-            className="item"
+            className={styles.item}
             style={{ background: getRandomHexColor() }}
           >
-            <span className="label">{stat.label}</span>
-            <span className="percentage">{stat.percentage}%</span>
+            <span className={styles.label}>{stat.label}</span>
+            <span className={styles.percentage}>{stat.percentage}%</span>
           </li>
         ))}
       </ul>
